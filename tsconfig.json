@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "module": "CommonJs", 
+    "module": "CommonJs",
     "target": "ES2022",
     "types": [],
     // For nodejs:
@@ -35,10 +35,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "removeComments": true,
+    "removeComments": true
   },
-    "exclude": [
-    "dist",
-    "node_modules"
-  ]
+  "exclude": ["dist", "node_modules"]
 }
