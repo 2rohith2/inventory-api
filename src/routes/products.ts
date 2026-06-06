@@ -7,7 +7,6 @@ import { HttpStatus } from '../utils/enums';
 import { createProduct, deleteProductById, getProduct, getProductById, updateProductStockById } from '../database';
 import { v4 } from 'uuid';
 import { validateProduct } from '../middleware/validateProduct';
-import { CreateProductSchema, ProductIdAndStockSchema } from '../utils/scheme';
 import { validateProductId } from '../middleware/validateProductId';
 import { validateProductIdAndStock } from '../middleware/validateProductIdAndStock';
 
