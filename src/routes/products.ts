@@ -40,14 +40,14 @@ products.patch('/:id/stock', validateProductIdAndStock(), (req: Request, res: Re
   try {
 
     updateProductStockById(productId, quantity);
-    logger.log({ level: 'info', message: `Product deleted - ${productId}` });
+    logger.log({ level: 'info', message: 'Product quantity is updated' });
     sendSuccess(getProductById(productId), res, '', HttpStatus.OK);
 
   } catch (error: unknown) {
 
     return sendError(
       "ERROR_IN_UPDATING_PRODUCT_QUANTITY",
-      'Error in updating product quanity',
+      'Error in updating product quantity',
       res,
       HttpStatus.BAD_REQUEST,
       error instanceof Error ? error.message : ""
