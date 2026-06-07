@@ -4,6 +4,6 @@ export interface Product {
   sku: string;
   category: string;
   quantity: number;
-  stockThreshold: number;
+  threshold: number;
   price: number;
 }
