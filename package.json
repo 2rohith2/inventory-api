@@ -11,7 +11,8 @@
     "url": "git+https://github.com/2rohith2/inventory-api.git"
   },
   "engines": {
-    "node": "v24.15.0"
+    "node": "v24.15.0",
+    "npm": "11.12.1"
   },
   "license": "MIT",
   "author": {
