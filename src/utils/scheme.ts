@@ -5,7 +5,7 @@ export const CreateProductSchema = z.object({
   sku: z.string(),
   category: z.string(),
   quantity: z.number(),
-  stockThreshold: z.number(),
+  threshold: z.number(),
   price: z.number(),
 }).strict();
 
