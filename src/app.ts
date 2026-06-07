@@ -13,7 +13,7 @@ const app = express();
  */
 app.use(function (req: any, res: any, next: () => void) {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'POST, PUT, GET, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Methods', 'POST, PUT, GET, DELETE, PATCH, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Authorization, Content-Type');
 
   if (req.method === 'OPTIONS') return res.sendStatus(200);
